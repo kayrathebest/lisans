@@ -1,0 +1,95 @@
+╔═══════════════════════════════════════════════════════════════╗
+║  ⚜️ ERCÜ ABİ TELEGRAM COMMANDER V2.1 - KULLANIM KILAVUZU ⚜️  ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📋 DOSYALAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ telegram_commander_fixed.py  → Ana program (düzeltilmiş)
+✅ build_exe.bat                → Windows için EXE oluşturucu
+✅ build_exe.sh                 → Linux/Mac için EXE oluşturucu
+✅ accounts.json                → Hesap bilgileri
+✅ sablonlar.json               → Mesaj şablonları
+✅ gonderilenler.txt            → Gönderilen kullanıcı ID'leri
+✅ DEGISIKLIKLER.txt            → Yapılan düzeltmeler
+
+📦 GEREKLİ PAKETLER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+pip install pyrogram
+pip install customtkinter
+pip install tgcrypto
+pip install pyinstaller
+
+🚀 KULLANIM ADIMLAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1️⃣ PYTHON İLE ÇALIŞTIRMA:
+   python telegram_commander_fixed.py
+
+2️⃣ EXE OLUŞTURMA (Windows):
+   build_exe.bat dosyasını çift tıkla
+   VEYA
+   pyinstaller --onefile --windowed telegram_commander_fixed.py
+
+3️⃣ EXE OLUŞTURMA (Linux/Mac):
+   ./build_exe.sh
+   VEYA
+   bash build_exe.sh
+
+🎯 PROGRAM KULLANIMI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ADIM 1: Hesap Ekle
+   → "+ HESAP EKLE" butonuna tıkla
+   → Telefon numaranı gir (örn: +905551234567)
+
+ADIM 2: Kodu İste
+   → Eklediğin hesabı SEÇ
+   → "📡 KOD İSTE" butonuna tıkla
+   → Telegram'dan gelen kodu bekle
+
+ADIM 3: Operasyonu Başlat
+   → HEDEF GRUP: Hedef grubun kullanıcı adını gir
+   → ONAY KODU: Telegram'dan gelen kodu gir (sadece ilk giriş)
+   → MESAJ METNİ: Göndermek istediğin mesajı yaz
+   → "OPERASYONU BAŞLAT 🚀" butonuna tıkla
+
+ADIM 4: İzle ve Bekle
+   → Program her mesaj arasında 65-95 saniye bekler
+   → Log ekranından durumu takip et
+   → Dilediğin zaman "🛑 DURDUR" ile durdurabilirsin
+
+⚙️ ÖNEMLİ NOTLAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ Flood kontrolü: Telegram'ın limitlerine takılırsan otomatik bekler
+⚠️ Hafıza sistemi: Aynı kişiye 2. kez mesaj göndermez
+⚠️ Bot filtreleme: Botlara mesaj gönderilmez
+⚠️ Gizlilik kontrolü: Mesaj almayı kapatan kullanıcılar atlanır
+⚠️ Admin yetkisi: Bazı gruplarda üye listesi için admin olman gerekebilir
+
+🛡️ GÜVENLİK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Session dosyaları "sessions" klasöründe güvenle saklanır
+✅ API bilgileri kodda gömülü (değiştirme!)
+✅ Proxy desteği mevcut (opsiyonel)
+✅ Anti-spam mekanizması aktif
+
+🐛 SORUN GİDERME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❌ "ChatAdminRequired" hatası
+   → Bu grupta admin değilsin, başka grup dene
+
+❌ "PeerFlood" hatası
+   → Hesabın geçici kısıtlandı, 24 saat bekle
+
+❌ "FloodWait" hatası
+   → Çok hızlı mesaj gönderdin, program otomatik bekler
+
+❌ "UserPrivacyRestricted" hatası
+   → Kullanıcı mesaj almayı kapatmış, normal (atlanır)
+
+📞 DESTEK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Herhangi bir sorun için log ekranındaki hata mesajlarını kontrol et.
+Program her işlemi detaylı şekilde logluyor.
+
+═══════════════════════════════════════════════════════════════
+            🎯 BOL KAZANÇLAR KUZEN! 🎯
+═══════════════════════════════════════════════════════════════
